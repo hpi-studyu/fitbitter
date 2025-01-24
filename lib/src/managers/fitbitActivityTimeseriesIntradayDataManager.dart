@@ -54,7 +54,7 @@ class FitbitActivityTimeseriesIntradayDataManager extends FitbitDataManager {
         userID: userID,
         dateOfMonitoring: dateWithTime,
         type: type,
-        value: double.parse(intradayData[record]['value']),
+        value: double.parse(intradayData[record]['value'].toString()),
       ));
     }
 
