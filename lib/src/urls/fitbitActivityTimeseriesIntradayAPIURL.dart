@@ -1,6 +1,6 @@
-import 'package:fitbitter/src/fitbitConnector.dart';
-import 'package:fitbitter/src/urls/fitbitAPIURL.dart';
 import 'package:fitbitter/src/utils/formats.dart';
+
+import '../../fitbitter.dart';
 
 class FitbitActivityTimeseriesIntradayAPIURL extends FitbitAPIURL {
   final String resourceString;
@@ -29,33 +29,3 @@ class FitbitActivityTimeseriesIntradayAPIURL extends FitbitAPIURL {
     return 'https://api.fitbit.com/1/user/$userID/activities';
   }
 }
-
-enum Resource {
-  activityCalories,
-
-  calories,
-
-  caloriesBMR,
-  distance,
-  elevation,
-  floors,
-  minutesSedentary,
-  minutesLightlyActive,
-  minutesFairlyActive,
-  minutesVeryActive,
-  steps,
-}
-
-Map<Resource, String> resourceToString = {
-  Resource.activityCalories: 'activityCalories',
-  Resource.calories: 'calories',
-  Resource.caloriesBMR: 'caloriesBMR',
-  Resource.distance: 'distance',
-  Resource.elevation: 'elevation',
-  Resource.floors: 'floors',
-  Resource.minutesSedentary: 'minutesSedentary',
-  Resource.minutesLightlyActive: 'minutesLightlyActive',
-  Resource.minutesFairlyActive: 'minutesFairlyActive',
-  Resource.minutesVeryActive: 'minutesVeryActive',
-  Resource.steps: 'steps',
-};
