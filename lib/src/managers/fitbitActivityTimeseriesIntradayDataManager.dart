@@ -38,7 +38,11 @@ class FitbitActivityTimeseriesIntradayDataManager extends FitbitDataManager {
     List<FitbitActivityTimeseriesData> atDatapoints =
         List<FitbitActivityTimeseriesData>.empty(growable: true);
 
-    final dayDate = DateTime.parse(daySummaryData['dateTime']);
+    if (daySummaryData[0] == null) {
+      return atDatapoints;
+    }
+
+    final dayDate = DateTime.parse(daySummaryData[0]['dateTime']);
 
     for (var record = 0; record < intradayData.length; record++) {
       final dateWithTime = dayDate.add(Duration(
