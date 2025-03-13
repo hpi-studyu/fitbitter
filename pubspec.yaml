@@ -15,7 +15,7 @@ dependencies:
     git:
       url: https://github.com/johannesvedder/flutter_web_auth.git
       branch: fix-android-kotlin
-  dio: ^5.7.0 #better web browser
+  dio: ^5.8.0+1 #better web browser
   logger: ^2.5.0
   intl: ^0.19.0
 

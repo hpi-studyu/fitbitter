@@ -103,7 +103,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "28b97455a0749d8e7eba99a8e0021cd4de7bda58"
+      resolved-ref: bf04a9fdb2cab08e3195b890aef7cd348f1babf0
       url: "https://github.com/johannesvedder/flutter_web_auth.git"
     source: git
     version: "0.6.0"
