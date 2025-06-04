@@ -11,10 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_web_auth: # ^0.6.0 #used to implement oauth 2.0
-    git:
-      url: https://github.com/johannesvedder/flutter_web_auth.git
-      ref: fix-android-kotlin
+  flutter_web_auth_2: ^4.1.0
   dio: ^5.8.0+1 # better web browser
   logger: ^2.5.0
   intl: ^0.20.2
